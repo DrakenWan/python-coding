@@ -6,7 +6,7 @@
  
  
 """
-import Location as L
+import Location
 
 class Agent:
     tags = []
@@ -48,7 +48,7 @@ class Agent:
         Agent.tags.append(self.tag) # update the Agent names list for assertion to work
         self.mass = mass
         self.intel = intel
-        self.loc = L.Location()
+        self.loc = Location()
         self.move(location[0],location[1],location[2], False)
         
         print("Agent ", self.tag, " created at location ", self.loc)
